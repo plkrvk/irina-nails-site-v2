@@ -204,7 +204,27 @@ a {
     border-radius: 50%;
     color: var(--white);
     font-style: normal;
-    transition: background 0.3s ease, color 0.3s ease;
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.nav__book i svg {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+.nav__book i svg path {
+    stroke: currentColor;
+    stroke-width: 1.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.nav__book:hover i {
+    background: var(--white);
+    color: var(--ink);
 }
 
 .nav__book:hover i {
@@ -769,6 +789,24 @@ a {
     opacity:.35;
     transition:.2s;
     mix-blend-mode:difference;
+}
+
+.arrow-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.arrow-icon svg path {
+    stroke: currentColor;
+    stroke-width: 1.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 @media(max-width:900px) {
